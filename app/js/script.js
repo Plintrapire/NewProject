@@ -32,27 +32,68 @@ $(document).ready(function(){
       });
 
       $(".span2").click(function(event){ 
-          $('html').animate({scrollTop: 880+740}, 1500);
+          $('html').animate({scrollTop: 1620}, 1500);
 
       });
 
       $(".span3").click(function(event){ 
-          $('html').animate({scrollTop: 880+740+925}, 1500);
+          $('html').animate({scrollTop: 2545}, 1500);
 
       });
 
       $(".span4").click(function(event){ 
-          $('html').animate({scrollTop: 880+740+925+818+202}, 1500);
+          $('html').animate({scrollTop: 3565}, 1500);
 
       });
 
       $(".span5").click(function(event){ 
-          $('html').animate({scrollTop: 880+740+925+818+356+202}, 1500);
+          $('html').animate({scrollTop: 3921}, 1500);
 
       });
 
       $(".span6").click(function(event){ 
-          $('html').animate({scrollTop: 880+740+925+818+356+850+202}, 1500);
+          $('html').animate({scrollTop: 4771}, 1500);
 
       });
+
+
+
+$('.scroll').click(function(){ 
+    if($(window).scrollTop()<880){ 
+      $('html').animate({scrollTop: 880}, 1500);
+    }
+    else { 
+      if($(window).scrollTop()<1620){ 
+        $('html').animate({scrollTop: 1620}, 1500);
+      }
+      else {
+        if($(window).scrollTop()< 2545){ 
+          $('html').animate({scrollTop: 2545}, 1500);
+          $(".scroll").css("border","1px solid black");
+        }
+        else {
+          if($(window).scrollTop()< 3565){ 
+          $('html').animate({scrollTop:  3565}, 1500);
+          }
+          else{
+            if($(window).scrollTop()< 3921){ 
+              $('html').animate({scrollTop:  3921}, 1500);
+            }
+            else{
+              if($(window).scrollTop()< 4771){ 
+               $('html').animate({scrollTop:  4771}, 1500);
+              }
+            }
+          }
+        } 
+      }
+    } 
+}); 
+
+
+
+
   });
+
+
+      
