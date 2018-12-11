@@ -2,50 +2,45 @@
   margin: 0px;
   padding: 0px; }
 
-.img-o {
-  width: 100%;
-  height: 100%;
-}
-
 header {
   background-image: url("../img/layer96.png");
   background-size: 100%;
-  height: 45.8vw;
+  height: 880px;
   width: 100%; }
 
 .menu {
-  height: 5.99vw;
+  height: 115px;
   width: 100%;
-  border-bottom: 0.1vw solid white; }
+  border-bottom: 1px solid white; }
 
 .Logotype {
-  height: 4vw;
-  width: 4vw;
-  margin-left: 11.3vw;
-  margin-top: 1vw;
+  height: 75px;
+  width: 80px;
+  margin-left: 215px;
+  margin-top: 20px;
   float: left; }
 
 .Navbar {
-  height: 100%;
-  width: 34.5vw;
-  margin-left: 12.5vw;
-  margin-top: 2.8vw;
+  height: 75px;
+  width: 660px;
+  margin-left: 240px;
+  margin-top: 52px;
   float: left; }
 
 .nadpi {
   height: auto;
   width: auto; }
   .nadpi h1 {
-    margin-top: 12.5vw;
-    font-size: 7.5vw; /*110px*/
+    margin-top: 243px;
+    font-size: 143px;
     color: white;
     font-family: Roboto Condensed; }
   .nadpi p {
     color: #11749e;
     font-size: 19px;
-    letter-spacing: 0.9vw;
+    letter-spacing: 18px;
     font-family: Roboto Condensed;
-    margin-left: 1.1vw; } /*19px*/
+    margin-left: 20px; }
 
 .span-cl {
   color: white;
@@ -67,25 +62,30 @@ header {
     border-bottom: 5px solid #11749e; }
 
 .soc {
-  height: 100%;
+  height: 75px;
   width: auto;
-  margin-left: 1vw;
-  margin-top: 2.8vw;
+  margin-left: 20px;
+  margin-top: 52px;
   float: left; }
 
 .social-icons {
-  margin-left: 1.5vw; }
+  margin-left: 30px; }
 
 .scroll-obc {
-  margin-left: 42.5%;
-  margin-top: 110px; }
+  margin-left: 47%;
+  margin-top: 80px;
+  position: fixed;
+  width: 5vw;
+  height: 5vw;
+  display: none;
+  z-index: 2; }
   .scroll-obc p {
     color: #fcfcfc;
     font-family: Roboto Condensed;
     font-size: 16px;
     letter-spacing: 0px;
-    margin-left: 9.36%;
-    padding-bottom: 19px; }
+    padding-bottom: 19px;
+    padding-top: 25px; }
 
 .scroll {
   height: 57px;
@@ -96,7 +96,30 @@ header {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 50%;
-  margin-left: 10%; }
+  margin-left: 25px; }
+
+.scroll-obc2 {
+  width: 6vw;
+  height: 6vw; }
+  .scroll-obc2 p {
+    color: #fcfcfc;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-left: 24%;
+    padding-bottom: 19px;
+    padding-top: 20px; }
+
+.scroll2 {
+  height: 57px;
+  width: 57px;
+  border-radius: 50%;
+  border: 1px solid #fcfcfc;
+  background-image: url("../img/scroll2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 50%;
+  margin-left: 25px; }
 
 .block2 {
   height: 740px;
@@ -393,3 +416,71 @@ header {
     font-family: Roboto Condensed;
     font-size: 36px;
     padding-top: 115px; }
+
+.block9 {
+  height: auto;
+  width: auto;
+  z-index: 1; }
+
+.block8 {
+  background-image: url("../img/layer97.png");
+  background-size: 100%;
+  height: 850px;
+  width: 100%; }
+
+.block8-8-8-8 {
+  height: 50%;
+  width: 75%;
+  margin-left: 292px; }
+  .block8-8-8-8 h1 {
+    color: white;
+    font-family: Roboto Condensed;
+    padding-top: 12px;
+    font-size: 24px; }
+  .block8-8-8-8 p {
+    color: white;
+    font-family: Roboto Condensed;
+    padding-top: 24px;
+    font-size: 19px; }
+
+.block8-1 {
+  height: 50%;
+  width: 75%;
+  margin-left: 225px;
+  background-image: url("../img/C.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 56%; }
+  .block8-1 h3 {
+    color: white;
+    font-family: Roboto Condensed;
+    font-size: 36px;
+    padding-top: 215px; }
+
+.name {
+  height: 50px;
+  width: 415px;
+  background-color: #00000010;
+  border: 1px solid white;
+  color: white; }
+
+.name2 {
+  height: 160px;
+  width: 1337px;
+  background-color: #00000010;
+  border: 1px solid white;
+  margin-top: 50px;
+  color: white; }
+
+.name-1 {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.name3 {
+  height: 65px;
+  width: 337px;
+  background-color: #11749e;
+  border: 0px solid white;
+  margin-top: 50px;
+  margin-left: 500px;
+  color: white; }
