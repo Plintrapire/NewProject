@@ -180,7 +180,42 @@
 		</div>
 	</div>
 			
+<?php 
+	if(isset($_POST["Name"])) $login = $_POST['Name'];
+	if(isset($_POST["Email"])) $login = $_POST['Email'];
+	if(isset($_POST["Phone"])) $login = $_POST['Phone'];
+	if(isset($_POST["Message"])) $login = $_POST['Message'];
 
+	$host = '127.0.0.1';
+    $db   = 'plint';
+    $user = 'root';
+    $pass = '';
+    $charset = 'utf8';
+
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+    $opt = [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,
+    ];
+    $pdo = new PDO($dsn, $user, $pass, $opt);
+
+    $stmt = $pdo->query('SELECT * FROM plintty');
+    while ($row = $stmt->fetch())
+    // {
+    // 	echo $row["Name"];
+    // }
+
+
+ 	// $sql = "INSERT INTO YNDXSB (Name, Email, Phone, Message) VALUES (:YNDX, :Data)";
+    // $q=$pdo->prepare($sql);
+    // $q->execute (array(':YNDX'=>$YNDX,
+    //                    ':Data'=>$Data));
+
+
+
+
+ ?>
 
 
 
