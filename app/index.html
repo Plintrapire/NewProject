@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Document</title>
-<link rel="stylesheet" href="css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 </head>
 <body>
 	<header>
@@ -14,12 +13,12 @@
 				<img src="img/Logo.png" class="img-o">
 			</div>
 			<div class="Navbar">
-					<span class="span-cl2 span1">Home</span>
-					<span class="span-cl span2">Pages</span>
-					<span class="span-cl span3">Features</span>
-					<span class="span-cl span4">Extencions</span>
-					<span class="span-cl span5">Tutorials</span>
-					<span class="span-cl span6">Contact Us</span>
+				<span class="span-cl2 span1">Home</span>
+				<span class="span-cl span2">Pages</span>
+				<span class="span-cl span3">Features</span>
+				<span class="span-cl span4">Extencions</span>
+				<span class="span-cl span5">Tutorials</span>
+				<span class="span-cl span6">Contact Us</span>
 			</div>
 			<div class="soc">
 				<img src="img/Facebook.png" class="social-icons2">
@@ -34,7 +33,8 @@
 		<div class="scroll-obc">
 			<div class="scroll-obc2">
 				<p>Scroll Up</p>
-				<div class="scroll2"></div>
+				<div class="scroll2">
+				</div>
 			</div>
 			<p>Scroll Down</p>
 			<div class="scroll"></div>
@@ -168,59 +168,21 @@
 			<h3 align="center">WE ARE AN AWESOME AGENCY</h3>
 		</div>
 		<div class="block8-8-8-8">
-			<form action="">
+			<form action="" method="POST" class="form-obc" name="name_form">
 				<input name = "Name" type="text" placeholder="Name" class = "name">
 				<input name = "Email" type="text" placeholder="Email" class = "name name-1">
-				<input name = "Phone" type="text" placeholder="Phone" class = "name">
+				<input name = "Phone" type="numeric" placeholder="Phone" class = "name">
 
 				<input name = "Message" type="text" placeholder="Message" class = "name2">
 
-				<input type="button" onclick = "melp ()" value="SUBMIT" class = "name3">
+				<input type="button" onclick = "prepare_xml()" value="SUBMIT" class = "name3">
 			</form>
 		</div>
 	</div>
-			
-<?php 
-	if(isset($_POST["Name"])) $login = $_POST['Name'];
-	if(isset($_POST["Email"])) $login = $_POST['Email'];
-	if(isset($_POST["Phone"])) $login = $_POST['Phone'];
-	if(isset($_POST["Message"])) $login = $_POST['Message'];
+	<div id="result_output"></div>
 
-	$host = '127.0.0.1';
-    $db   = 'plint';
-    $user = 'root';
-    $pass = '';
-    $charset = 'utf8';
-
-    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-    $opt = [
-        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES   => false,
-    ];
-    $pdo = new PDO($dsn, $user, $pass, $opt);
-
-    $stmt = $pdo->query('SELECT * FROM plintty');
-    while ($row = $stmt->fetch())
-    // {
-    // 	echo $row["Name"];
-    // }
-
-
- 	// $sql = "INSERT INTO YNDXSB (Name, Email, Phone, Message) VALUES (:YNDX, :Data)";
-    // $q=$pdo->prepare($sql);
-    // $q->execute (array(':YNDX'=>$YNDX,
-    //                    ':Data'=>$Data));
-
-
-
-
- ?>
-
-
-
-
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
